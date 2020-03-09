@@ -1,0 +1,252 @@
+
+/*
+Make diarmuid as main header central,
+    use these four fonts to choose fav
+    font-family: 'Spartan', ;
+
+    font-family: 'Muli', ;
+
+    font-family: 'Comfortaa', ; */
+
+
+
+
+
+/* Global Styles
+-----------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    color: navy;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /*font-family: 'Merriweather', serif;*/
+    font-size: 15px;
+    line-height: 1.25;
+}
+p {
+    margin: 0;
+}
+img {
+    width: 300px;
+    border-radius: 15px;
+}
+a {
+    color: yellow;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: line-through;
+}
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+
+}
+h1 {
+    font-size: 45px;
+    margin: 0;
+}
+h2 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 1;
+}
+
+.content-wrap {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+.item-details h3 + p {
+    font-style: italic;
+}
+.item-details h3 ~ p {
+    margin: 0;
+}
+.divider > section {
+    border-bottom: 1px dashed beige;
+    padding: 25px 0;
+}
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+
+/* BANNER
+------------------------------------------*/
+
+.banner {
+    /* z-index: 4;
+    transition: all 300ms ease-in-out; */
+    position: absolute;
+    width: 100%;
+    /* background: rgba(215, 225, 235, 100%); */ */
+    color: #602E3F;
+    text-align: center;
+    padding: 0;
+}
+.banner a {
+    padding: 30px;
+
+    color: black;
+
+}
+.banner ul {
+  list-style-position: outside;
+  list-style-type: none;
+
+}
+.banner li {
+  display: inline-block;
+  font-size: 15px;
+  /* padding-left: 10%;
+  padding-right: 10%; */
+}
+
+
+/* Profile
+-----------------------------------------*/
+header {
+    background: white;
+    color: #F7FFF7;
+    text-align: center;
+    background-image: url(../images/homePageRound.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    padding-bottom: 30%;
+}
+header p {
+    color: aliceblue;
+    background: rgba(0, 0, 0, 40%);
+    border-radius: 10px;
+
+}
+
+
+/* Projects
+-----------------------------------------*/
+
+.projects {
+    /* background: #602E3F;
+    color: aliceblue; */
+    background: white;
+    color: #602E3F;
+    padding-left: 10px;
+}
+.projects a {
+    color: beige;
+}
+.projects .btn {
+    color: beige;
+    background: navy;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.projects .btn:hover {
+    background: rgba(47, 48, 97, 80%)
+}
+.project-item {
+    overflow: hidden;
+}
+.project-item h3 {
+    margin-top: 0;
+}
+
+/* Work Experience
+-----------------------------------------*/
+
+.work-experience {
+    background: beige;
+    padding-left: 10px
+}
+
+.job-details {
+
+}
+.job-summary {
+
+}
+.job-item h3 {
+    margin-top: 0;
+}
+#work-explanation {
+    padding-bottom: 10px;
+}
+
+/* Educations
+-----------------------------------------*/
+
+.education {
+    color: aliceblue;
+    padding-left: 10px;
+    background-image: url(../images/Clare_Road.jpeg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    padding-bottom: 25%;
+}
+
+/* Contact info
+-----------------------------------------*/
+
+footer {
+    background: rgba(0, 0, 0, 50%);
+    color: #F7FFF7;
+    text-align: center;
+}
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+}
+
+
+/* Responsive
+------------------------------------*/
+@media screen and (min-width: 750px){
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+    h1 {
+        font-size: 75px;
+    }
+}
+@media screen and (max-width: 749px){
+
+    h1, h2 {
+        line-height: 1;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
+}
+
+/* test PHP
+-------------------------------------*/
+
+.workExperience h1{
+  font-size: 100px;
+}
